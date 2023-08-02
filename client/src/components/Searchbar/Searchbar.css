@@ -1,0 +1,68 @@
+.searchbar-main-area {
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.searchbar-main-area .searchbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar-main-area .searchbar-container form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 30px 0;
+}
+
+.searchbar-main-area .searchbar-container form label {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.searchbar-main-area .searchbar-container form .form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  margin: 0 20px 20px 20px;
+}
+
+.searchbar-main-area
+  .searchbar-container
+  form
+  .form-item
+  input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.searchbar-main-area .searchbar-container form input {
+  box-sizing: border-box;
+  width: 150px;
+  height: 60px;
+  padding: 6px 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.searchbar-main-area .searchbar-container form button {
+  align-self: flex-end;
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #e70b53;
+  border: none;
+  border-radius: 5px;
+  margin: 0 20px 20px 20px;
+  padding: 0 40px;
+}

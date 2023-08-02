@@ -1,0 +1,23 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: #fafafa;
+  min-height: 100vh;
+  padding-left: 290px;
+  padding-top: 78px;
+  width: calc(100% - 290px);
+}
+
+.main-content .body {
+  z-index: 1;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,493 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+.active {
+  color: #e70b53 !important;
+  font-weight: 600;
+}
+
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  & .top-header-area {
+    background-color: hsl(203, 59%, 14%);
+    display: flex;
+    flex-direction: row;
+
+    color: #fff;
+
+    & .phemail {
+      margin-left: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      & .phone-no {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        transition: color 0.3s ease;
+        & ion-icon {
+          margin-right: 10px;
+        }
+      }
+      & .e-mail {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        transition: color 0.3s ease;
+        & ion-icon {
+          margin-right: 10px;
+          font-size: larger;
+        }
+      }
+      & .e-mail:hover {
+        color: #999;
+      }
+      & .phone-no:hover {
+        color: #999;
+      }
+    }
+    & .socialmedia {
+      & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      & li {
+        float: left;
+        padding: 14px 16px;
+      }
+      & li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+    }
+  }
+  & .main-header-area {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .logo-sec {
+      padding: 10px;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img {
+        width: 200px;
+      }
+    }
+    & .nav-sec {
+      padding: 10px;
+      margin-right: 50px;
+      & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #fff;
+      }
+
+      & li {
+        float: left;
+        padding: 14px 16px;
+      }
+      & li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      /* Change the link color on hover */
+      & li a:hover {
+        color: #999;
+      }
+    }
+
+    & .register-login-sec {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 400px;
+      & a {
+        display: block;
+        font-size: large;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & .register-sec-normal {
+        height: 100%;
+        flex-basis: 0;
+        flex-grow: 1;
+        border-right: 1px solid #fff;
+        background-color: rgba(231, 11, 83, 1);
+        transition: all 0.6s ease;
+      }
+      & .login-sec-normal {
+        height: 100%;
+        flex-basis: 0;
+        flex-grow: 1;
+        background-color: rgba(231, 11, 83, 1);
+        transition: all 0.6s ease;
+      }
+      & .register-sec-normal a {
+        display: block;
+        padding: 14px 16px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: large;
+      }
+      /* Change the link color on hover */
+      & a:hover {
+        background-color: #2a303b;
+      }
+    }
+    & .responsive-toggle {
+      display: none;
+      & .checkbtn {
+        & ion-icon {
+          font-size: 48px;
+        }
+        & .checkbox-input {
+          display: none;
+        }
+      }
+      & .resp-nav-sec {
+        position: fixed;
+        width: max(40%, 200px);
+        height: 100vh;
+        background-color: #fff;
+
+        top: 0;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        & .register-login-sec-2 {
+          background-color: rgba(231, 11, 83, 1);
+          display: flex;
+          flex-direction: row;
+          & li {
+            flex-basis: 0;
+            flex-grow: 1;
+          }
+          & li a {
+            display: block;
+            padding: 3px 10px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: large;
+          }
+          & li:hover {
+            background-color: #2a303b;
+          }
+        }
+        & ul {
+          list-style-type: none;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          & li {
+            padding: 10px;
+            & img {
+              margin-top: 10px;
+              width: 160px;
+            }
+            & a {
+              text-decoration: none !important;
+              color: #333;
+            }
+          }
+          & li a:hover {
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .profile-pic-dtls-in-nav-bar-2 {
+    display: none !important;
+  }
+  .header-area {
+    & .main-header-area {
+      height: 70px;
+      & .logo-sec {
+        margin-left: 3rem;
+        margin-right: 4rem;
+        & img {
+          width: 160px;
+        }
+      }
+      & .nav-sec {
+        padding: 0;
+        margin: 0;
+        & ul {
+          width: 0 !important;
+        }
+        & li a {
+          display: none;
+        }
+      }
+      & .register-login-sec {
+        display: none;
+        padding: 0;
+        margin: 0;
+      }
+      & .responsive-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        & .toggle-input {
+          display: none;
+        }
+        .drawer {
+          position: fixed;
+          left: 0;
+          z-index: 200 !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .header-area {
+    & .main-header-area {
+      & .responsive-toggle {
+        & .resp-nav-sec {
+          width: max(80%, 200px);
+        }
+      }
+      & .logo-sec {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        & img {
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 505px) {
+  .header-area {
+    & .main-header-area {
+      & .responsive-toggle {
+        & .resp-nav-sec {
+          width: max(80%, 200px);
+        }
+      }
+    }
+    & .top-header-area {
+      height: 50px;
+      & .phemail {
+        & .phone-no {
+          & .txtphno {
+            display: none;
+          }
+        }
+        & .e-mail {
+          & .txtmail {
+            display: none;
+          }
+        }
+      }
+      & .socialmedia {
+        display: none;
+      }
+    }
+  }
+}
+
+/* for profile */
+.profile-pic-dtls-in-resp-nav-side-bar {
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(231, 11, 83, 1),
+    rgba(116, 0, 98, 1)
+  );
+
+  & .name-profile {
+    padding-left: 10px;
+    flex-basis: 0;
+    flex-grow: 0.5;
+    font-size: 2rem;
+    font-family: cursive;
+    color: white;
+  }
+  & .icon-profile {
+    flex-basis: 0;
+    flex-grow: 0.5;
+    color: #fff;
+    font-size: 32px;
+  }
+}
+.dashboard-logout-in-nav {
+  font-size: 1.2rem;
+  & a {
+    display: flex;
+    color: #eee;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-top: 1px solid #fff;
+
+    & span {
+      display: flex;
+      align-items: center;
+      padding: 4px;
+
+      & ion-icon {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  & .dash-user {
+    padding: 10px 10px 10px 40px;
+    text-align: center;
+    background: linear-gradient(
+      to right,
+      rgba(231, 11, 83, 1),
+      rgba(116, 0, 98, 1)
+    );
+  }
+  & .logout-user {
+    color: rgb(248, 145, 145);
+    padding: 10px 10px 10px 40px;
+    transition: all 0.5s;
+    background: linear-gradient(
+      to right,
+      rgba(231, 11, 83, 1),
+      rgba(116, 0, 98, 1)
+    );
+  }
+  & .dash-user:hover {
+    color: #fff;
+    background: linear-gradient(
+      to left,
+      rgba(231, 11, 83, 1),
+      rgba(116, 0, 98, 1)
+    );
+  }
+  & .logout-user:hover {
+    color: rgb(248, 145, 145);
+    background: linear-gradient(
+      to left,
+      rgba(231, 11, 83, 1),
+      rgba(116, 0, 98, 1)
+    );
+  }
+}
+
+/* for normal screen profile*/
+/* for profile */
+.profile-pic-dtl-2 {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  & .profile-pic-dtls-in-nav-bar-2 {
+    min-width: 190px;
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      to right,
+      rgba(231, 11, 83, 1),
+      rgba(116, 0, 98, 1)
+    );
+
+    & .name-profile {
+      padding-left: 10px;
+      flex-basis: 0;
+      flex-grow: 0.5;
+      font-size: 1.5rem;
+      font-family: cursive;
+      color: white;
+      cursor: pointer;
+    }
+    & .icon-profile {
+      padding: 10px;
+      color: #fff;
+      font-size: 32px;
+      cursor: pointer;
+    }
+  }
+  & .dashboard-logout-in-nav {
+    width: 100%;
+    & a {
+      margin: auto;
+      border-top: 1px solid #fff;
+    }
+  }
+}
+.just-take-space-here {
+  flex-basis: 0;
+  flex-grow: 0.4;
+}
+
+.notify ion-icon{
+ width: 130px;
+ margin: auto;
+ margin-top: 24px;
+ font-size: larger;
+ font-weight: bolder;
+}

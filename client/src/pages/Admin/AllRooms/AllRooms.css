@@ -1,0 +1,98 @@
+.room-table {
+  border-spacing: 0px;
+  width: 100%;
+  padding: 10px 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.room-table th {
+  padding: 1.4em 0.75em;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  background-color: #e7145b;
+  border: 1px solid white;
+}
+
+.room-table th:first-child {
+  width: 150px;
+}
+
+.room-table td {
+  border-bottom: 1px solid black;
+  padding: 0.75em;
+  vertical-align: center;
+  text-align: center;
+}
+
+.room-table tr:hover {
+  background-color: rgba(182, 184, 184, 0.232);
+}
+
+.room-table .room-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  margin: 0;
+}
+
+.room-table .room-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.room-table .room-edit-delete ion-icon {
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+.room-table .room-edit-delete ion-icon:last-child {
+  color: red;
+}
+
+.pagination-component {
+  text-align: center;
+  margin: 40px 0;
+}
+
+@media only screen and (max-width: 1060px) {
+  .room-table table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  .room-table tr {
+    border: 2px solid #e7145b;
+    border-radius: 10px;
+    margin: 0 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .room-table .room-image {
+    width: 100%;
+    box-sizing: border-box;
+
+    & img {
+      width: 80%;
+    }
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid white;
+  }
+
+  td {
+    border: none;
+    position: relative;
+  }
+}
